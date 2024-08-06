@@ -1,10 +1,12 @@
 body {
-    background-color: rgb(223, 223, 223);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(75, 214, 214);
-    height: 200vh;
+    height: 260vh;
+    background-image: url("back4.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 ul {
@@ -12,7 +14,7 @@ ul {
     overflow: hidden;
     padding: 0.5pc;
     margin: 0;
-    background-color: #383b3b;
+    background-color: #001b27;
     display: flex;
     border-radius: 2px;
     
@@ -27,17 +29,24 @@ li a {
     font-size: large;
     position: relative;
 }
-li:hover {
-    background-color: #000000;
+li a:hover {
     border-radius: 5px;
+    color: #000000;
+    background-color: antiquewhite;
 }
 
+/* div first card */
 div.card {
     background-color: #331732;
-    margin: 10px;
-    padding: 10px;
+    
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left:  20%;
+    padding: 20px;
     border-radius: 5px;
-    width: 97%;
+    width: 56%;
+    
+    
 }
 
 p.hello {
@@ -71,13 +80,186 @@ img.imgjs {
 
 }
 
+/* div second card */
+
+div.card1 {
+    background-color: #d1c5c5;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 5px;
+    width: 88%;
+    height: 450px; 
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+}
+p#bio {
+    color: #020101;
+    font-size: 1.5pc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 25px;
+}
+
+
+div.card2 {
+    background-color: #331732;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+img.img {
+    width: 550px;
+    height: 300px;
+    border-radius: 5%;
+    opacity: 0.5;
+    margin: 3%;
+}
+img.img:hover {
+  opacity: 1; 
+}
+
+div.card3 {
+    display: flex;
+}
+div.loader1 {
+    background-color: #d1c5c5;
+    color:#020101 ;
+    font-size: 30px;
+    width: 8%;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 11.2%;
+    padding: 10px;
+    
+}
+div.loader2 {
+    background-color: #d1c5c5;
+    color:#020101 ;
+    font-size: 30px;
+    width: 8%;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 24.2%;
+    padding: 10px;
+    
+}
+div.loader3 {
+    background-color: #d1c5c5;
+    color:#020101 ;
+    font-size: 30px;
+    width: 8%;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 23.2%;
+    padding: 10px;
+    
+}
+
+div.card4 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #a73512;
+    margin-top: 8%;
+}
+.cn{
+    color: #000000;
+    font-family: monospace;
+    font-size:30px;
+}
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-link {
+    margin: 10px 0;
+    font-size: 1.4em;
+
+}
+
+
+.contact-link a {
+    text-decoration: none;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-link a.git:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0d130e;
+    padding: 8px;
+    border-radius:5%;
+
+}
+.contact-link a.wa:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0fb417;
+    padding: 8px;
+    border-radius:5%;
+
+}
+.contact-link a.em:hover {
+    text-decoration: none;
+    color: #bebb0a;
+    background-color: #e0dcd0;
+    padding: 8px;
+    border-radius:5%;
+}
+.contact-link a.li:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3259da;
+    padding: 8px;
+    border-radius:5%;
+}
+
+
+.contact-link i {
+    margin-right: 
+    8px;
+    margin: 5px;
+}
+
+#up {
+    
+    position: fixed;
+    font-weight: bold;
+    background-color: #c51b1b;
+    color: white;
+    right: 20px;
+    bottom: 80px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: large;
+    font-family :Arial, Helvetica, sans-serif;
+  }
+
+#up:hover {
+    background-color: #ffffff;
+    color: rgb(207, 6, 6);
+}
 
 footer {
     background-color: #333333;
     color: #fff;
     text-align: center;
-    padding: 1cqi;
     position: fixed;
-    width: 100%;
+    width:100%;
     bottom: 0;
+    font-size: large;
+    left: 0;
 }
