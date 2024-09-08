@@ -1,8 +1,9 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    height: 260vh;
+    height: 242vh;
     background-image: url("back4.jpg");
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -14,10 +15,9 @@ ul {
     overflow: hidden;
     padding: 0.5pc;
     margin: 0;
-    background-color: #001b27;
+    background-image: linear-gradient(to right,#001b27, #290931);
     display: flex;
     border-radius: 2px;
-    
 }   
 li a {
     display: block;
@@ -37,7 +37,8 @@ li a:hover {
 
 /* div first card */
 div.card {
-    background-color: #331732;
+    background-color: #3a093bd8;
+    background-image: linear-gradient(to bottom right,rgb(11, 197, 182),#3a093b );
     
     margin-top: 5%;
     margin-right: 20%;
@@ -57,8 +58,8 @@ p.hello {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 p.name {
-    color: #FF5722; 
-    font-size: 2pc;
+    color: #000000; 
+    font-size: 2.6pc;
     padding-left: 25px;
     display: inline-flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,19 +140,29 @@ div.loader1 {
     border-radius: 5%;
     margin-left: 11.2%;
     padding: 10px;
-    
 }
+
+div.loader1:hover{
+    cursor: pointer;
+    background-color: #afa6a6;
+}
+
 div.loader2 {
     background-color: #d1c5c5;
     color:#020101 ;
     font-size: 30px;
-    width: 8%;
+    width: 12%;
     text-align: center;
     border-radius: 5%;
-    margin-left: 24.2%;
+    margin-left: 21.6%;
     padding: 10px;
-    
 }
+
+div.loader2:hover{
+    cursor: pointer;
+    background-color: #afa6a6;
+}
+
 div.loader3 {
     background-color: #d1c5c5;
     color:#020101 ;
@@ -159,9 +170,14 @@ div.loader3 {
     width: 8%;
     text-align: center;
     border-radius: 5%;
-    margin-left: 23.2%;
+    margin-left: 22.5%;
     padding: 10px;
     
+}
+
+div.loader3:hover{
+    cursor: pointer;
+    background-color: #afa6a6;
 }
 
 div.card4 {
@@ -171,7 +187,8 @@ div.card4 {
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
-    background-color: #a73512;
+    background-image: linear-gradient(rgb(204, 135, 7),rgb(189, 44, 44) );
+    
     margin-top: 8%;
 }
 .cn{
@@ -195,6 +212,7 @@ div.card4 {
     text-decoration: none;
     color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 .contact-link a.git:hover {
     text-decoration: none;
@@ -202,6 +220,7 @@ div.card4 {
     background-color: #0d130e;
     padding: 8px;
     border-radius:5%;
+    transition: 0.6s;
 
 }
 .contact-link a.wa:hover {
@@ -210,6 +229,7 @@ div.card4 {
     background-color: #0fb417;
     padding: 8px;
     border-radius:5%;
+    transition: 0.6s;
 
 }
 .contact-link a.em:hover {
@@ -218,6 +238,7 @@ div.card4 {
     background-color: #e0dcd0;
     padding: 8px;
     border-radius:5%;
+    transition: 0.6s;
 }
 .contact-link a.li:hover {
     text-decoration: none;
@@ -225,6 +246,7 @@ div.card4 {
     background-color: #3259da;
     padding: 8px;
     border-radius:5%;
+    transition: 0.6s;
 }
 
 
@@ -234,6 +256,11 @@ div.card4 {
     margin: 5px;
 }
 
+#down {
+    color: #000000;
+    font-size: large;
+}
+
 #up {
     
     position: fixed;
@@ -241,7 +268,7 @@ div.card4 {
     background-color: #c51b1b;
     color: white;
     right: 20px;
-    bottom: 80px;
+    bottom: 33px;
     padding: 8px;
     border-radius: 4px;
     font-size: large;
@@ -251,15 +278,24 @@ div.card4 {
 #up:hover {
     background-color: #ffffff;
     color: rgb(207, 6, 6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Mylogo {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    z-index: -1;
+    width: 400.5px;
+    height: 93.5px;
 }
 
-footer {
+#fo {
     background-color: #333333;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
-    position: fixed;
-    width:100%;
-    bottom: 0;
+    padding: 10px;
+    bottom: 0px;
+    height: 56px;
     font-size: large;
-    left: 0;
 }
